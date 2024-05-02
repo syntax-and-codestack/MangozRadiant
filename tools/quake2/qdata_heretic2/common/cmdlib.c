@@ -84,15 +84,6 @@ void *SafeMalloc( size_t n, char *desc ){
 	return p;
 }
 
-#if defined( __linux__ ) || defined( __BSD__ ) || defined( __APPLE__ )
-void strlwr( char *conv_str ){
-	int i;
-
-	for ( i = 0; i < strlen( conv_str ); i++ )
-		conv_str[i] = tolower( conv_str[i] );
-}
-#endif
-
 
 // set these before calling CheckParm
 int myargc;

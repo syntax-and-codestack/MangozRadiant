@@ -24,6 +24,10 @@
 
 #define     MAXFILES    2048
 
+#if defined( __linux__ ) || defined( __BSD__ ) || defined( __APPLE__ )
+#define strlwr strlower
+#endif
+
 typedef struct
 {
 	int x;
