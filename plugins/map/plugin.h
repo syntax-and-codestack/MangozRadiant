@@ -60,6 +60,9 @@ extern void *g_pRadiantWnd;
 #define MAPVERSION_Q3 1
 #define MAPVERSION_HL 2
 #define MAPVERSION_Q2 3
+
+#define MAPVERSION_IW 4
+
 //#define MAPVERSION_Q1
 
 #define MAP_NOERROR 0
@@ -72,6 +75,9 @@ void Map_ReadHL( IDataStream *in, CPtrArray *map );
 void Map_WriteHL( CPtrArray *map, IDataStream *out );
 void Map_ReadQ2( IDataStream *in, CPtrArray *map );
 void Map_WriteQ2( CPtrArray *map, IDataStream *out );
+//iw
+void Map_ReadIW( IDataStream * in, CPtrArray *map);
+void Map_WriteIW( CPtrArray *map, IDataStream *out;
 
 extern CSynapseServer* g_pSynapseServer;
 
