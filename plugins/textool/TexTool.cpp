@@ -37,6 +37,9 @@ _QERFuncTable_1 g_FuncTable;
 // plugin name
 const char *PLUGIN_NAME = "Q3 Texture Tools";
 
+//MANGOZ : new plugins name...
+const char *PLUGIN_NAMES = "IW Texture Tools";
+
 // commands in the menu
 const char *PLUGIN_COMMANDS = "About;-;Go...";
 
