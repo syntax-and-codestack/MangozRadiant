@@ -26,11 +26,27 @@
 #include <limits.h>
 #include "filters.h"
 
+/*
+  =======================
+  
+       BRUSH POLYGON
+       
+  =======================
+       ____________
+      /           /|     
+     /           / |
+    /-----------/  |
+    |           |  /
+    |           | /
+    |___________|/
+*/
+
 extern MainFrame* g_pParentWnd;
 
 // globals
 
 static char g_BrushBuffer[1024];//buffer
+
 int g_nBrushId = 0;
 
 void BrushSet_Epair(brush_t *b, "%C", g_BrushBuffer){
