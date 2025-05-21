@@ -30,7 +30,13 @@ extern MainFrame* g_pParentWnd;
 
 // globals
 
+static char g_BrushBuffer[1024];//buffer
 int g_nBrushId = 0;
+
+void BrushSet_Epair(brush_t *b, "%C", g_BrushBuffer){
+      b->key;
+      b->value;
+}
 
 #ifdef ENABLE_GROUPS
 const char* Brush_Name( brush_t *b ){
